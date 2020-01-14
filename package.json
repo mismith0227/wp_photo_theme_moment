@@ -1,0 +1,6 @@
+{
+  "name": "wp_photo_theme_moment",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT"
+}
