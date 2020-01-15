@@ -7,7 +7,7 @@ const config = {
 }
 
 const tasks = {
-  cleanup: ['./svgpack', './css', './js/bundle*.js'],
+  cleanup: ['./css', './js/bundle*.js'],
   scss: {
     src: `${config.src}/scss/style.scss`,
     dest: './'
@@ -28,8 +28,9 @@ const tasks = {
     }
   },
   watch: {
-    css: [`${config.src}/scss/**/*.scss`],
+    scss: [`${config.src}/scss/**/*.scss`],
     webpack: [`${config.src}/js/**/*.js`],
+    php: ['./**/*.php'],
     reload: ['./**/*.php', './js/*.js']
   }
 }

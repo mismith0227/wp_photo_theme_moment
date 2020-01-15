@@ -50,7 +50,7 @@ const compileJavascript = () => {
 // Clean
 // =====================================================
 const clean = cb => {
-  return del(config.tasks.clean, cb)
+  return del(config.tasks.cleanup, cb)
 }
 
 // Server
@@ -71,13 +71,13 @@ const browserSyncReload = done => {
 // Watch
 // =====================================================
 const watchFiles = done => {
-  watch(config.tasks.scss.src, gulp.series(compileSass, browserSyncReload))
+  watch(config.tasks.watch.scss, gulp.series(compileSass, browserSyncReload))
   watch(
-    config.tasks.webpack.src,
+    config.tasks.watch.webpack,
     gulp.series(compileJavascript, browserSyncReload)
   )
   watch(config.tasks.images.src, gulp.series(minifyImages, browserSyncReload))
-  watch(config.tasks.watch.reload, browserSyncReload)
+  watch(config.tasks.watch.php, browserSyncReload)
   done()
 }
 
