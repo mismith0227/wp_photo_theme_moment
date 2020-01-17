@@ -24,10 +24,13 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 @import './Foundation/Variable/color.scss';
 @import './Foundation/reset';
 @import './Foundation/base';
+@import './Foundation/typography';
 @import './Layout/l-header';
 @import './Layout/l-footer';
 @import './Layout/l-main';
+@import './Layout/l-content';
 @import './Layout/l-nav';
 @import './Object/Component/c-logo';
 @import './Object/Component/c-menu';
 @import './Object/Component/c-mainslider';
+@import './Object/Component/c-title';
