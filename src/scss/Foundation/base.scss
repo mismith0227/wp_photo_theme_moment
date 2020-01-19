@@ -1,13 +1,13 @@
 body {
-  background: #000;
-  color: #808080;
+  background: $bg;
+  color: $text;
   font-family: -apple-system, 'BlinkMacSystemFont', 'Helvetica Neue', Helvetica,
     'Roboto', Arial, 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo,
     sans-serif;
 }
 
 a {
-  color: #808080;
+  color: $text;
 }
 
 /* Text meant only for screen readers. */

@@ -23,6 +23,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 @import './Foundation/Variable/breakpoint';
 @import './Foundation/Variable/color';
 @import './Foundation/Variable/px2rem';
+@import './Foundation/lib/slick';
 @import './Foundation/reset';
 @import './Foundation/base';
 @import './Foundation/typography';
@@ -39,6 +40,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 @import './Object/Component/c-gallery';
 @import './Object/Component/c-thumbnail';
 @import './Object/Component/c-copyright';
+@import './Object/Component/c-cursor';
 @import './Object/Project/p-page-header';
 @import './Object/Project/p-article';
 @import './Object/Project/p-entry-header';

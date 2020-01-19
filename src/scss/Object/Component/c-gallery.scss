@@ -29,6 +29,7 @@
         filter: grayscale(100%);
         transition: 1s;
 
+        &.is-zooming,
         &:hover {
           filter: grayscale(0%);
         }
