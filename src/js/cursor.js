@@ -33,7 +33,7 @@ export const cursor = () => {
     mouseY = e.pageY
   })
 
-  $('a, .c-gallery img').on({
+  $('a, button, .c-gallery img').on({
     mouseenter: e => {
       follower.addClass('is-active')
     },

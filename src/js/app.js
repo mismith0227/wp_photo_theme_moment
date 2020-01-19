@@ -1,5 +1,6 @@
 import Zooming from 'zooming'
 import { cursor } from './cursor'
+import { toggle as toggleSidebar } from './sidebar'
 const $ = window.jQuery
 require('slick-carousel')
 
@@ -13,6 +14,19 @@ $(() => {
   ) {
     cursor()
   }
+
+  // menu
+  $('body').append('<div class="sidebar-back">')
+
+  const menuIcon = $('#menuicon')
+  const sidebarBack = $('.sidebar-back')
+  menuIcon.on('click', () => {
+    toggleSidebar()
+  })
+
+  sidebarBack.on('click', () => {
+    toggleSidebar()
+  })
 
   // slick
   $('#slick-slider').slick({
