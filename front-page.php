@@ -24,6 +24,9 @@ get_header();
       <div class="c-mainslider-item">
         <img src="<?php echo get_template_directory_uri(); ?>/images/img2.jpeg" />
       </div>
+      <div class="c-mainslider-item">
+        <img src="<?php echo get_template_directory_uri(); ?>/images/img3.jpeg" />
+      </div>
     </div>
   </div>
   
