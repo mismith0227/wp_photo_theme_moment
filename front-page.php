@@ -16,10 +16,18 @@ get_header();
 ?>
 
 <div class="l-main">
-  <div class="c-mainslider">
-    <img src="<?php echo get_template_directory_uri(); ?>/images/img1.jpeg" />
-
-    <img src="<?php echo get_template_directory_uri(); ?>/images/img2.jpeg" />
-
+  <div class="slick-wrap">
+    <div id="slick-slider">
+      <div class="c-mainslider-item">
+        <img src="<?php echo get_template_directory_uri(); ?>/images/img1.jpeg" />
+      </div>
+      <div class="c-mainslider-item">
+        <img src="<?php echo get_template_directory_uri(); ?>/images/img2.jpeg" />
+      </div>
+    </div>
   </div>
+  
 </div>
+
+<?php
+get_footer();

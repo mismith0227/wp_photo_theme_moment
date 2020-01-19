@@ -1,20 +1,17 @@
-.c-mainslider {
-  width: 100vw;
+.slick-wrap {
+  width: 100%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+}
+
+.c-mainslider-item {
   height: calc(100vw * 0.4625);
   max-height: calc(1200px * 0.5625);
   box-sizing: border-box;
   overflow: hidden;
   position: relative;
-
-  // @include mq-up(sm) {
-  //   width: calc(100vw - 40px);
-  //   height: calc((100vw - 40px) * 0.5625);
-  // }
-
-  // @include mq-up(lg) {
-  //   width: calc(100vw - 180px);
-  //   height: calc((100vw - 180px) * 0.5625);
-  // }
 
   img {
     width: 100%;
@@ -28,6 +25,44 @@
     &.show {
       opacity: 1;
       z-index: 10;
+    }
+  }
+}
+
+.slick-dots {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  bottom: px2rem(-30);
+  left: 50%;
+  transform: translate3d(-50%, 0, 0);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  li {
+    margin: 0 px2rem(8);
+  }
+
+  button {
+    width: px2rem(12);
+    height: px2rem(12);
+    border-radius: 50%;
+    border: none;
+    text-indent: 100%;
+    overflow: hidden;
+    padding: 0;
+    background-color: $text;
+    transition: 0.2s;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .slick-active {
+    button {
+      width: px2rem(16);
+      height: px2rem(16);
     }
   }
 }

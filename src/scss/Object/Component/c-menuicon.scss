@@ -1,0 +1,15 @@
+.c-menuicon {
+  position: fixed;
+  bottom: px2rem(20);
+  right: px2rem(20);
+  border: none;
+  background-color: transparent;
+  color: $text;
+  font-size: px2rem(16);
+  z-index: 101;
+  box-sizing: border-box;
+  padding: px2rem(8) px2rem(16);
+  &:hover {
+    cursor: pointer;
+  }
+}
