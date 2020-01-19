@@ -5,6 +5,10 @@
   .entry-content {
     width: 96%;
     max-width: px2rem(780);
-    margin: px2rem(120) auto 0;
+    margin: px2rem(80) auto 0;
+
+    @include mq-up(sm) {
+      margin: px2rem(120) auto 0;
+    }
   }
 }

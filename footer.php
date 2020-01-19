@@ -18,7 +18,7 @@
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
-<button id="menuicon" class="c-menuicon">info</button>
+<div id="menuicon" class="c-menuicon">info</div>
 
 <div class="p-sidebar">
 	<div class="p-sidebar-inner">
