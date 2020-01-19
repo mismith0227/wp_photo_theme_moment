@@ -12,7 +12,6 @@ get_header();
 
 	<div id="primary" class="l-content">
 		<main id="main" class="site-main">
-
 		<?php if ( have_posts() ) : ?>
 
 			<header class="page-header">
