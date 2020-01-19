@@ -1,10 +1,11 @@
 .l-header {
   box-sizing: border-box;
   display: flex;
-  padding: 16px;
+  padding: px2rem(16);
   position: fixed;
   z-index: 10;
   width: 100%;
   top: 0;
   left: 0;
+  height: 80px;
 }

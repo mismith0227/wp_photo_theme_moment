@@ -20,14 +20,26 @@ Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 */
 
-@import './Foundation/Variable/breakpoint.scss';
-@import './Foundation/Variable/color.scss';
+@import './Foundation/Variable/breakpoint';
+@import './Foundation/Variable/color';
+@import './Foundation/Variable/px2rem';
 @import './Foundation/reset';
 @import './Foundation/base';
+@import './Foundation/typography';
 @import './Layout/l-header';
 @import './Layout/l-footer';
 @import './Layout/l-main';
+@import './Layout/l-content';
 @import './Layout/l-nav';
+@import './Layout/l-articles';
 @import './Object/Component/c-logo';
 @import './Object/Component/c-menu';
 @import './Object/Component/c-mainslider';
+@import './Object/Component/c-title';
+@import './Object/Component/c-gallery';
+@import './Object/Component/c-thumbnail';
+@import './Object/Component/c-copyright';
+@import './Object/Project/p-page-header';
+@import './Object/Project/p-article';
+@import './Object/Project/p-entry-header';
+@import './Object/Project/p-single';

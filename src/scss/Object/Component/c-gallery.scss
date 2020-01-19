@@ -1,0 +1,38 @@
+.c-gallery {
+  .blocks-gallery-grid {
+    display: grid;
+    margin: px2rem(120) auto 0;
+    grid-template-columns: repeat(1, 1fr);
+    gap: px2rem(100);
+    width: 90%;
+
+    @include mq-up(sm) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include mq-up(lg) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    .blocks-gallery-item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      margin: 0;
+
+      figure {
+        display: block;
+        height: auto;
+      }
+      img {
+        height: auto;
+        filter: grayscale(100%);
+        transition: 1s;
+
+        &:hover {
+          filter: grayscale(0%);
+        }
+      }
+    }
+  }
+}

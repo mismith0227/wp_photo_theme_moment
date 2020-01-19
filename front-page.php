@@ -15,20 +15,11 @@
 get_header();
 ?>
 
-<div class="main content">
+<div class="l-main">
   <div class="c-mainslider">
-    <div class="frame slideshow">
-      <img src="<?php echo get_template_directory_uri(); ?>/images/img1.jpeg" />
+    <img src="<?php echo get_template_directory_uri(); ?>/images/img1.jpeg" />
 
-      <img src="<?php echo get_template_directory_uri(); ?>/images/img2.jpeg" />
+    <img src="<?php echo get_template_directory_uri(); ?>/images/img2.jpeg" />
 
-      <img src="<?php echo get_template_directory_uri(); ?>/images/img3.jpeg" />
-
-      <img src="<?php echo get_template_directory_uri(); ?>/images/img4.jpeg" />
-    </div>
-    <div class="slidetime">
-      <span class="progressbar"></span>
-      <span class="counter"></span>
-    </div>
   </div>
 </div>
