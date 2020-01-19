@@ -6,12 +6,12 @@ require('slick-carousel')
 
 $(() => {
   const ua = navigator.userAgent
-
-  if (
+  const isPC =
     ua.indexOf('iPhone') === -1 &&
     (ua.indexOf('Android') === -1) & (ua.indexOf('Mobile') === -1) &&
     ua.indexOf('iPad') === -1
-  ) {
+
+  if (isPC) {
     cursor()
   }
 
@@ -33,8 +33,8 @@ $(() => {
     autoplay: true,
     autoplaySpeed: 3000,
     arrows: false,
-    fade: true,
-    speed: 1000,
+    fade: isPC,
+    speed: isPC ? 1000 : 300,
     dots: true
   })
 
@@ -42,7 +42,7 @@ $(() => {
   const zooming = new Zooming({
     bgColor: 'rgba(0, 0, 0)',
     bgOpacity: 0.7,
-    scaleBase: 0.5,
+    scaleBase: isPC ? 0.5 : 0.9,
     onBeforeOpen: target => {
       target.classList.add('is-zooming')
     },

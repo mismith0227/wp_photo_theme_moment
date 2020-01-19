@@ -20117,8 +20117,9 @@ __webpack_require__(/*! slick-carousel */ "./node_modules/slick-carousel/slick/s
 
 $(function () {
   var ua = navigator.userAgent;
+  var isPC = ua.indexOf('iPhone') === -1 && ua.indexOf('Android') === -1 & ua.indexOf('Mobile') === -1 && ua.indexOf('iPad') === -1;
 
-  if (ua.indexOf('iPhone') === -1 && ua.indexOf('Android') === -1 & ua.indexOf('Mobile') === -1 && ua.indexOf('iPad') === -1) {
+  if (isPC) {
     Object(_cursor__WEBPACK_IMPORTED_MODULE_1__["cursor"])();
   } // menu
 
@@ -20137,15 +20138,15 @@ $(function () {
     autoplay: true,
     autoplaySpeed: 3000,
     arrows: false,
-    fade: true,
-    speed: 1000,
+    fade: isPC,
+    speed: isPC ? 1000 : 300,
     dots: true
   }); // zooming
 
   var zooming = new zooming__WEBPACK_IMPORTED_MODULE_0__["default"]({
     bgColor: 'rgba(0, 0, 0)',
     bgOpacity: 0.7,
-    scaleBase: 0.5,
+    scaleBase: isPC ? 0.5 : 0.9,
     onBeforeOpen: function onBeforeOpen(target) {
       target.classList.add('is-zooming');
     },

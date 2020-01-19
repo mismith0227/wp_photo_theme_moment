@@ -2,6 +2,10 @@
   margin: px2rem(8) 0 0;
 
   .c-title {
-    font-size: px2rem(48);
+    font-size: px2rem(24);
+
+    @include mq-up(sm) {
+      font-size: px2rem(48);
+    }
   }
 }

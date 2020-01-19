@@ -51,8 +51,11 @@
   width: 100%;
   height: 100%;
   z-index: 99;
+
   &.open {
-    display: block;
+    @include mq-up(sm) {
+      display: block;
+    }
   }
 }
 

@@ -1,6 +1,10 @@
 .p-page-header {
   padding: 0 px2rem(16);
   .c-title {
-    font-size: px2rem(120);
+    font-size: px2rem(40);
+
+    @include mq-up(sm) {
+      font-size: px2rem(120);
+    }
   }
 }

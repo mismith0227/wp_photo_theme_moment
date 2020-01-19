@@ -2,5 +2,9 @@
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  margin: px2rem(120) 0 0;
+  margin: px2rem(80) 0 0;
+
+  @include mq-up(sm) {
+    margin: px2rem(120) 0 0;
+  }
 }
