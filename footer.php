@@ -10,15 +10,9 @@
  */
 
 ?>
-
-	<footer id="colophon" class="l-footer">
-		<div class="c-copyright">
-			© 2020 <a href="https://mismith.me/">mismith.me</a>
-		</div><!-- .c-copyright -->
-	</footer><!-- #colophon -->
 </div><!-- #page -->
 
-<div id="menuicon" class="c-menuicon">info</div>
+<div id="menuicon" class="c-menuicon">About</div>
 
 <div class="p-sidebar">
 	<div class="p-sidebar-inner">
@@ -31,7 +25,7 @@
 			</div>
 			<p class="name">misumi takuma</p>
 			<p class="text">
-				大阪在住のwebエンジニア趣味で写真を撮っています。
+				大阪在住のwebエンジニア。趣味で写真を撮っています。
 			</p>
 			<p class="text">
 				このサイトはwebサイトのアニメーションなどを試すのが目的ですが、せっかくなので撮った写真のギャラリー要素も入れています。
@@ -45,6 +39,9 @@
 				>
 			</p>
 		</div>
+		<div class="c-copyright">
+			© 2020 <a href="https://mismith.me/">mismith.me</a>
+		</div><!-- .c-copyright -->
 	</div>
 </div>
 
