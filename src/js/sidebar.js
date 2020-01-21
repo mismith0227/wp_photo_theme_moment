@@ -7,11 +7,13 @@ export const toggle = () => {
     $('.p-sidebar').removeClass('open')
     $('.sidebar-back').removeClass('open')
     $('.site').removeClass('blur')
+    $('#menuicon').removeClass('open')
     isSidebarOpen = !isSidebarOpen
   } else {
     $('.p-sidebar').addClass('open')
     $('.sidebar-back').addClass('open')
     $('.site').addClass('blur')
+    $('#menuicon').addClass('open')
     isSidebarOpen = !isSidebarOpen
   }
 }
