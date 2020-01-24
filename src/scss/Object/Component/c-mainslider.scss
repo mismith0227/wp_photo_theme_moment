@@ -41,6 +41,7 @@
   list-style: none;
 
   li {
+    position: relative;
     margin: 0 px2rem(8);
   }
 
@@ -48,12 +49,13 @@
     width: px2rem(12);
     height: px2rem(12);
     border-radius: 50%;
-    border: none;
+    border: px2rem(1) solid $text;
     text-indent: 100%;
     overflow: hidden;
     padding: 0;
     background-color: $text;
     transition: 0.2s;
+    box-sizing: border-box;
     &:hover {
       cursor: pointer;
     }
@@ -61,8 +63,8 @@
 
   .slick-active {
     button {
-      width: px2rem(16);
-      height: px2rem(16);
+      border: px2rem(1) solid $text;
+      background-color: transparent;
     }
   }
 }
