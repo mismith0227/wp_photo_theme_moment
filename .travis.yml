@@ -1,0 +1,26 @@
+language: node_js
+
+node_js:
+  - "12"
+
+sudo: false
+
+cache:
+  directories:
+    - node_modules
+
+branches:
+  only:
+    - master
+
+before_script: bash ./bin/build.sh
+
+script:
+    - ls -al static/css/style.css
+
+after_success: bash ./bin/deploy.sh
+
+env:
+  global:
+  - GH_REF: github.com/mismith0227/wp_photo_theme_moment.git
+  - secure: "sXTzU7ek1FJUefVjYrkthtJSPHj22A+Fov+cC2t4TGzu6HhH/vGQacMj6fZ9WU6G3+PsxHjX8demKidQqvByv5BgFIpg1zwKeBjtZ8U/PnHOSw4AmEk0EJqatJXyryiLJyZamJlsqehE5udu860sYDtdR+/OOZ/kLsmPXfRXP4LQA0X1AVlLftIicX7Xxuz4OBWpygYzHoAoZ0PXG/n2nIou2GQjs2W40lVV+hfEURY0/vyIcPCI7wdEfgWaNvBhwuusRp2TrGeWHhK8cgkA0ihPEajL1WadHPpKOdNVgYcT57KJLboQa0U8MQr/XbmAnP1VVMwwYJJz8hceK/JcwKtm/uK4zY6J9kCgLqNZvdRe+Q2fixbcZmdr0bHAGGXoe8tCfZSKgD3lREXRdIwHJsqnU6DfqA7ReVzjg93vFdxIBttA7JyUwUiljxQQJFLaoyTRgSm8qImS1VDFmiMlfsuqT2gUYRoJQbKobBSJjve8uKsC/h63tS8IF2+g8Y3Mxl8Detdm2iLx6LQ89Ui1zqG4tNPuGBPl5bzEqU1bXm4MTBU4pW7sJpv3KvO9RB0HT7a9UBLiTjy+3w/mHuHsMPflKj5+jac6V3HF7T2ggJ4mzS7rFD/MbhpT/01dkFHFL5VCqTnTBt5xo/v9bZ1GBxNqdQDtZuU8lw7lm9q4x1o="
