@@ -23,7 +23,13 @@
     transform: translate3d(-100%, 0, 0);
   }
 
+  .name {
+    margin: px2rem(48) 0 0;
+    font-size: px2rem(24);
+  }
+
   .text {
+    margin: px2rem(24) 0 0;
     font-size: px2rem(14);
     line-height: 1.7;
   }

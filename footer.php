@@ -23,7 +23,7 @@
 					alt=""
 				/>
 			</div>
-			<p class="name">misumi takuma</p>
+			<p class="name">Misumi Takuma</p>
 			<p class="text">
 				大阪在住のwebエンジニア。趣味で写真を撮っています。
 			</p>
