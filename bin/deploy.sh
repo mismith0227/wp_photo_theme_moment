@@ -13,7 +13,7 @@ fi
 rm -rf .git
 rm -r .gitignore
 
-echo "
+echo ".vscode
 .editorconfig
 .travis.yml
 .gitignore
