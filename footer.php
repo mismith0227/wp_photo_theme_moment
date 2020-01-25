@@ -31,12 +31,10 @@
 				このサイトはwebサイトのアニメーションなどを試すのが目的ですが、せっかくなので撮った写真のギャラリー要素も入れています。
 			</p>
 			<p class="text">
-				<a href="https://mismith.me/" target="_blank">About me</a>
+				<a href="https://mismith.me/" target="_blank" rel="noopener">About me</a>
 			</p>
 			<p class="text">
-				<a href="https://500px.com/mismith2216" target="_blank"
-					>View 500px</a
-				>
+				<a href="https://500px.com/mismith2216" target="_blank" rel="noopener">View 500px</a>
 			</p>
 		</div>
 		<div class="c-copyright">

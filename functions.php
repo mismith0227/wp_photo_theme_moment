@@ -129,7 +129,7 @@ function wp_photo_theme_moment_scripts() {
 
 	wp_enqueue_script( 'wp_photo_theme_moment-skip-link-focus-fix', $url . '/js/skip-link-focus-fix.js', array(), $version, false );
 
-	wp_enqueue_script( 'wp_photo_theme_moment-main', $url . '/js/bundle.js', array('jquery'), $version, false );
+	wp_enqueue_script( 'wp_photo_theme_moment-main', $url . '/js/bundle.js', array(), $version, false );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
