@@ -27,7 +27,7 @@
     "gsap": "^3.0.5",
     "jquery": "^3.2.1",
     "slick-carousel": "^1.8.1",
-    "standard": "^14.3.1",
+    "standard": "^15.0.0",
     "standard-loader": "^7.0.0",
     "zooming": "^2.1.1"
   }
